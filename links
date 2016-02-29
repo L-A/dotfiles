@@ -1,0 +1,19 @@
+#! /bin/bash
+
+# list of files/folders to be symlinked
+# symlink will be created from source (in dotfiles repo) to destination (existing file to override)
+# make sure to leave an empty line at the end of the list
+# escape whitespaces with \
+# lines format: destination, source
+#   desination - the original file on disk
+#   source - the symlinked file in the dotfiles repo folder structure, relative to the repo's base dir
+
+# Atom
+~/.atom/styles.less, /atom/styles.less
+~/.atom/config.cson, /atom/config.cson
+
+# Git
+~/.gitignore, /git/.gitignore
+
+# Zsh / Oh My zsh
+~/.zshrc, /zsh/.zshrc

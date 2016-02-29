@@ -1,0 +1,25 @@
+"*":
+  "base16-syntax":
+    scheme: "PhD"
+  core:
+    openEmptyEditorOnStart: false
+    projectHome: "/Users/lalabadie/git"
+    themes: [
+      "one-dark-ui"
+      "base16-syntax"
+    ]
+  editor:
+    fontFamily: "Input"
+    fontSize: 12
+    invisibles: {}
+    lineHeight: 1.6
+  "exception-reporting":
+    userId: "39e9de20-41ae-09e0-9052-71f3901e403d"
+  minimap:
+    charHeight: 1
+  "one-dark-ui":
+    layoutMode: "Spacious"
+  "one-light-ui":
+    layoutMode: "Spacious"
+  welcome:
+    showOnStartup: false
