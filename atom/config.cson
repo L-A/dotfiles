@@ -21,5 +21,12 @@
     layoutMode: "Spacious"
   "one-light-ui":
     layoutMode: "Spacious"
+  pigments:
+    extendAutocompleteToColorValue: true
+    markerType: "dot"
+    sortPaletteColors: "by name"
+    traverseIntoSymlinkDirectories: true
+  react:
+    enabledForAllJavascriptFiles: true
   welcome:
     showOnStartup: false
