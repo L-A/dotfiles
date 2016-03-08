@@ -1,0 +1,11 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Louis-André Labadie
+	email = monsieur@louis-andre.net
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
