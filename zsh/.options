@@ -2,7 +2,12 @@ export UPDATE_ZSH_DAYS=6
 
 export STARTING_DIR=/Users/lalabadie/git
 
-ZSH_THEME="cypher"
+ZSH_THEME="dotfile-defined"
+
+# https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
+
+POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 
 # ENABLE_CORRECTION="true"
 

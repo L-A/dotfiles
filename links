@@ -18,3 +18,4 @@
 
 # Zsh / Oh My zsh
 ~/.zshrc, /zsh/.zshrc
+~/.oh-my-zsh/custom/themes/dotfile-defined.zsh-theme, /zsh/theme.zsh-theme
