@@ -2,6 +2,9 @@
   "base16-syntax":
     scheme: "PhD"
   core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
     openEmptyEditorOnStart: false
     projectHome: "/Users/lalabadie/git"
     themes: [
@@ -13,6 +16,11 @@
     fontSize: 12
     invisibles: {}
     lineHeight: 1.6
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "39e9de20-41ae-09e0-9052-71f3901e403d"
   minimap:
