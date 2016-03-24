@@ -34,7 +34,26 @@
     markerType: "dot"
     sortPaletteColors: "by name"
     traverseIntoSymlinkDirectories: true
+  "project-quick-open":
+    openProjectsInSameWindow: true
+    projectPaths: "~/git"
   react:
     enabledForAllJavascriptFiles: true
+  swackets: {}
   welcome:
     showOnStartup: false
+".attribute-values.js.jsx.source":
+  editor:
+    preferredLineLength: 100
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 100
+".js.jsx.react.source":
+  editor:
+    preferredLineLength: 100
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+".js.source.subtlegradient":
+  editor:
+    preferredLineLength: 100
