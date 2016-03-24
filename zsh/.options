@@ -4,11 +4,7 @@ export STARTING_DIR=/Users/lalabadie/git
 
 ZSH_THEME="dotfile-defined"
 
-# https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs)
-
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 COMPLETION_WAITING_DOTS="true"
 
