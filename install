@@ -1,6 +1,9 @@
 #!/bin/bash
 #
-# script will create symlinks for all files in LINKS
+# script will run pref setups and create symlinks for all files in LINKS
+
+# Source preferences and setups 
+source "setup/.osx"
 
 LINKS="links"
 DOTFILES=${PWD}
