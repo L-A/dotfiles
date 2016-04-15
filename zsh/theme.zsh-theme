@@ -5,21 +5,8 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-# If you resize your terminal often, you're going to hate me
-onresize()
-{
-  h_separator=""
-  for i in {1..$(tput cols)}; do
-    h_separator+="_"
-  done
-}
-
-onresize
-TRAPWINCH () { onresize }
-
 # primary prompt
-PROMPT='$FG[237]%{$h_separator%}%{$reset_color%}
-$FG[032]%~\
+PROMPT='$FG[032]%~\
 $(git_prompt_info) \
 $FG[105]%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
@@ -38,7 +25,7 @@ else
 fi
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075](branch:"
+ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075]("
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="$my_orange*%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[075])%{$reset_color%}"
