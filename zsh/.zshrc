@@ -1,4 +1,4 @@
-export DOTFILES_PATH=/Users/lalabadie/git/.dotfiles
+export DOTFILES_PATH=/Users/lalabadie/git/dotfiles
 
 export ZSH=/Users/lalabadie/.oh-my-zsh
 
