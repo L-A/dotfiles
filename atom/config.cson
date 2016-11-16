@@ -1,24 +1,35 @@
 "*":
+  "atom-ternjs":
+    inlineFnCompletionDocumentation: true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    defaultProvider: "Fuzzy"
   "base16-syntax":
-    scheme: "PhD"
+    scheme: "OceanicNext"
   core:
+    audioBeep: false
     disabledPackages: [
       "wrap-guide"
       "ex-mode"
-      "vim-mode"
       "activate-power-mode"
+      "emmet-snippets-compatibility"
+      "vim-mode"
+      "emmet"
     ]
-    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
     projectHome: "/Users/lalabadie/git"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "base16-syntax"
     ]
   editor:
     fontFamily: "Input"
-    fontSize: 12
     invisibles: {}
     lineHeight: 1.6
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
@@ -26,6 +37,9 @@
   "exception-reporting":
     userId: "39e9de20-41ae-09e0-9052-71f3901e403d"
   "file-icons": {}
+  "language-babel":
+    autoIndentJSX: true
+    disableWhenNoBabelrcFileInPath: false
   "language-elm":
     elmOraclePath: "/usr/local/bin/elm-oracle"
   "markdown-preview": {}
@@ -35,11 +49,12 @@
     textOpacity: 0.4
   "one-dark-ui":
     layoutMode: "Spacious"
+    tabSizing: "Minimum"
   "one-light-ui":
     layoutMode: "Spacious"
   pigments:
     extendAutocompleteToColorValue: true
-    markerType: "dot"
+    markerType: "native-underline"
     sortPaletteColors: "by name"
     traverseIntoSymlinkDirectories: true
   platomformio:
@@ -51,26 +66,85 @@
   react:
     enabledForAllJavascriptFiles: true
   swackets: {}
+  "tree-view": {}
   "vim-mode": {}
   welcome:
     showOnStartup: false
 ".attribute-values.js.jsx.source":
   editor:
     preferredLineLength: 100
+".babel.regexp.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".c2hs.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".cabal.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
 ".coffee.jsx.source":
   editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".css.source.styled":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 100
 ".elm.source":
   editor:
+    preferredLineLength: 100
+".haskell.hint":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".haskell.hint.message":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".haskell.hint.type":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".haskell.latex.tex.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".haskell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".hsc2hs.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 100
 ".js.jsx.react.source":
   editor:
     preferredLineLength: 100
 ".js.jsx.source":
   editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+    preferredLineLength: 100
+".js.regexp.replacement.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".js.regexp.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 100
+".js.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 100
 ".js.source.subtlegradient":
   editor:
+    preferredLineLength: 100
+".languagebabel.ttlextension":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 100
 ".pug.source":
   editor:

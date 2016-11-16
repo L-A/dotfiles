@@ -5,9 +5,11 @@
 [user]
 	name = Louis-André Labadie
 	email = monsieur@louis-andre.net
+	signingkey = 3016DA65
 [credential]
 	helper = osxkeychain
 [push]
 	default = simple
 [core]
 	editor = atom --wait
+	excludesfile = /Users/lalabadie/.gitignore_global

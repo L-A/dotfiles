@@ -12,10 +12,17 @@
 ~/.atom/styles.less, /atom/styles.less
 ~/.atom/config.cson, /atom/config.cson
 
+# Vim
+~/.vimrc, /vim/vimrc
+~/.vim/bundle, /vim/bundle
+
 # Git
 ~/.gitignore, /git/.gitignore
 ~/.gitconfig, /git/.gitconfig
 
-# Zsh / Oh My zsh
+# Shell, zprezto
 ~/.zshrc, /zsh/.zshrc
-~/.oh-my-zsh/custom/themes/dotfile-defined.zsh-theme, /zsh/theme.zsh-theme
+~/.zpreztorc, /zsh/.zpreztorc
+
+# Hyper.app
+~/.hyper.js, /hyper/hyper.js
