@@ -1,16 +1,46 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Vim-Airline outputs problematic escape characters, this 'fixes' it.
+set t_RV=
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'sheerun/vim-polyglot'
+" Allows async compiling and such 
+Plugin 'tpope/vim-dispatch'
+" Inserts git symbols
 Plugin 'airblade/vim-gitgutter'
+" Bottom status line
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" File browser
+Plugin 'scrooloose/nerdtree'
+" Syntax checker
+Plugin 'vim-syntastic/syntastic'
+" Intellisense & C completion
+Plugin 'OmniSharp/omnisharp-vim'
+" Code completion
+Plugin 'valloric/youcompleteme'
+" JS syntax, indentation, highlighting
+Plugin 'pangloss/vim-javascript'
+" JSX-specific
+Plugin 'mxw/vim-jsx'
+" JSON highlighting
+Plugin 'elzr/vim-json'
+" Auto-close and indent encircling characters 
+Plugin 'Raimondi/delimitMate'
+" Fuzzy finder 
+Plugin 'ctrlpvim/ctrlp.vim'
+" Emmet
+Plugin 'mattn/emmet-vim'
+" Closes XML-style tags
+Plugin 'alvan/vim-closetag'
+" Sublime-style multiple cursors (ctrl-n in visual mode)
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -28,24 +58,77 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on " enable syntax highlighting
-filetype plugin indent on
 
+set list
+set listchars=tab:▸\ ,eol:⏎
+
+" Visible numbers column
 set number
+set cursorline
 
+" Move around splits with cmd + direction
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Move by screen line instead of file line
+nnoremap j gj
+nnoremap k gk
+
 set splitbelow
 set splitright
+
+set shiftwidth=0
+set tabstop=2
+set breakindent
+set display+=lastline
+
+" Color preferences
+set background=dark
+highlight Comment ctermfg=grey
+highlight CursorLine cterm=none ctermbg=none ctermfg=none
+highlight CursorLineNR ctermfg=blue
+highlight LineNR ctermfg=grey
+highlight MatchParen ctermfg=darkred ctermbg=grey 
+highlight Pmenu ctermfg=white ctermbg=darkgrey
+highlight PmenuSel ctermfg=white ctermbg=darkmagenta
+highlight NonText ctermfg=darkgrey
+highlight SpecialKey ctermfg=darkgrey
+
+" YouCompleteMe settings
+let g:ycm_add_preview_to_completeopt = 1 " Add autocomplete opts to the preview
+let g:ycm_autoclose_preview_window_after_insertion = 1 " But close the preview when it's done
+
+" Ctrl+P ignores
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+" Emmet
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
+
+" JSX highlighting
+let g:jsx_ext_required = 0
 
 " Airline settings
 set laststatus=2
 let g:airline_powerline_fonts = 1
+let g:airline_theme='light'
 
-" Gitgutter
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.maxlinenr = ''
+
+" Signs and GitGutter
 let g:gitgutter_sign_column_always = 1
 set updatetime=250
+let GitGutterLineHighlightsEnable = 1
 
-Plugin 'vim-airline/vim-airline'
+" Delimitmate will expand and add a carriage return to brackets
+let delimitMate_expand_cr = 1
+

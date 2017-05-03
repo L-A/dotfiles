@@ -17,7 +17,6 @@
 
 // style the background color of the tree view
 .tree-view {
-  // background-color: whitesmoke;
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself
@@ -29,6 +28,10 @@ atom-text-editor {
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
 atom-text-editor::shadow .cursor {
   // border-color: red;
+}
+
+.editor.is-focused .cursor.blink-off {
+  visibility: visible;
 }
 
 atom-panel.modal.overlay { // In theory, this only moves the command palette
@@ -49,4 +52,16 @@ atom-panel.modal.overlay { // In theory, this only moves the command palette
     font-size: 2em;
     height: 1.8em;
   }
+}
+
+// Vim mode appearance
+#status-bar-vim-mode-plus {
+  border-radius: 2px;
+  color: @text-color;
+  margin-top: 0.5em;
+  line-height: 1.625em;
+  padding: 0 0.5em;
+  &.status-bar-vim-mode-plus-normal { background-color: @background-color-success; }
+  &.status-bar-vim-mode-plus-insert { background-color: @background-color-info; }
+  &.status-bar-vim-mode-plus-visual { background-color: @background-color-warning; }
 }

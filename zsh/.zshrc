@@ -6,6 +6,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZPREZTO/init.zsh
 
+# Tmux is pretty picky about that
+export TERM=xterm-256color
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
