@@ -11,6 +11,7 @@
 # Atom
 ~/.atom/styles.less, /atom/styles.less
 ~/.atom/config.cson, /atom/config.cson
+~/.atom/packages.cson, /atom/packages.cson
 
 # Vim
 ~/.vimrc, /vim/vimrc

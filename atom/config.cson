@@ -78,6 +78,8 @@
       showHome: false
   "one-dark-ui": {}
   "one-light-ui": {}
+  "package-sync":
+    createOnChange: true
   pigments:
     extendAutocompleteToColorValue: true
     markerType: "native-underline"
