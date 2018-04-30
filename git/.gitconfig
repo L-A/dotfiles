@@ -1,7 +1,8 @@
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [user]
 	name = Louis-André Labadie
 	email = monsieur@louis-andre.net
@@ -12,4 +13,6 @@
 	default = simple
 [core]
 	editor = atom --wait
-	excludesfile = /Users/lalabadie/.gitignore_global
+	excludesfile = /Users/lal/.gitignore
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
