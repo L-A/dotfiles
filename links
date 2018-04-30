@@ -12,6 +12,8 @@
 ~/.atom/styles.less, /atom/styles.less
 ~/.atom/config.cson, /atom/config.cson
 ~/.atom/packages.cson, /atom/packages.cson
+~/.atom/init.coffee, /atom/init.coffee
+
 
 # Vim
 ~/.vimrc, /vim/vimrc

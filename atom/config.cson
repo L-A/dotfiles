@@ -1,9 +1,9 @@
 "*":
   "atom-ternjs":
+    guess: false
     inlineFnCompletionDocumentation: true
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
-    defaultProvider: "Fuzzy"
   "autohide-tree-view":
     showOn: "click"
   "base16-syntax":
@@ -28,30 +28,31 @@
       "wrap-guide"
       "activate-power-mode"
       "emmet-snippets-compatibility"
-      "vim-mode"
+      "linter"
+      "nuclide"
+      "linter-mjml"
     ]
+    excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: [
       "emmet"
     ]
     projectHome: "/Users/lalabadie/git"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
+      "pristine-ui"
       "base16-syntax"
     ]
-    titleBar: "hidden"
+    titleBar: "custom-inset"
   "cursor-blink-interval":
     cursorBlinkInterval: 0
   "duotone-dark-syntax":
     color:
-      duo: "#fdf587"
-      uno: "#b5b0f7"
+      duo: "#a390e3"
+      uno: "#d3fed8"
   editor:
     fontFamily: "Hack"
-    fontSize: 13
     invisibles: {}
-    lineHeight: 1.4
-    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    lineHeight: 1.6
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
@@ -67,19 +68,24 @@
     ]
   "language-elm":
     elmOraclePath: "/usr/local/bin/elm-oracle"
-  "linter-ui-default": {}
+  "linter-eslint":
+    globalNodePath: "/Users/lal/.nvm/versions/node/v8.9.4"
+    useGlobalEslint: true
+  "linter-stylelint": {}
+  "linter-ui-default":
+    panelHeight: 99
   "markdown-preview": {}
   minimap:
     charHeight: 1
     independentMinimapScroll: true
     textOpacity: 0.4
   nuclide:
+    "nuclide-flow":
+      warnOnNotInstalled: false
     "nuclide-home":
       showHome: false
   "one-dark-ui": {}
   "one-light-ui": {}
-  "package-sync":
-    createOnChange: true
   pigments:
     extendAutocompleteToColorValue: true
     markerType: "native-underline"
@@ -88,6 +94,14 @@
   platomformio:
     environPath: "/Users/lalabadie/.rvm/gems/ruby-2.2.0/bin:/Users/lalabadie/.rvm/gems/ruby-2.2.0@global/bin:/Users/lalabadie/.rvm/rubies/ruby-2.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/lalabadie/.rvm/bin"
     verboseUpload: false
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNoConfigFile: true
+      showInStatusBar: true
+    prettierOptions:
+      bracketSpacing: false
+      singleQuote: true
   "project-plus":
     notifications: false
     projectHome: "~/git"
@@ -97,13 +111,18 @@
     projectPaths: "~/git"
   react:
     enabledForAllJavascriptFiles: true
+  runner:
+    scopes:
+      babel: "node"
+      js: "node"
   "status-bar": {}
   swackets: {}
   "sync-settings":
     _analyticsUserId: "0aaaf875-ea94-4a1e-a912-625697a82017"
   tabs:
     alwaysShowTabBar: false
-  "tree-view": {}
+  "tree-view":
+    alwaysOpenExisting: true
   "vim-mode":
     wrapLeftRightMotion: true
   "vim-mode-plus":
@@ -193,3 +212,6 @@
 ".pug.source":
   editor:
     preferredLineLength: 100
+".reason.source":
+  editor:
+    preferredLineLength: 110
