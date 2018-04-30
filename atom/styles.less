@@ -31,27 +31,7 @@ atom-text-editor::shadow .cursor {
 }
 
 .editor.is-focused .cursor.blink-off {
-  visibility: visible;
-}
-
-atom-panel.modal.overlay { // In theory, this only moves the command palette
-  top: 20%;
-
-  &:before {
-    border-top: solid 1px @background-color-selected;
-    border-radius: 6px;
-    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.8);
-  }
-
-  &:after {
-    background: none;
-  }
-
-  atom-text-editor.mini {
-    box-shadow: none;
-    font-size: 2em;
-    height: 1.8em;
-  }
+  // visibility: visible;
 }
 
 // Vim mode appearance
