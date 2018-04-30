@@ -45,3 +45,7 @@ export LC_MONETARY="en_CA.UTF-8"
 export LC_NUMERIC="en_CA.UTF-8"
 export LC_TIME="en_CA.UTF-8"
 export LC_ALL="en_CA.UTF-8"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
