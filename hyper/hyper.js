@@ -1,10 +1,10 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Hack, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: 'Input, Hack, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
 		cursorShape: 'UNDERLINE',
@@ -13,24 +13,13 @@ module.exports = {
 		cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#eee',
 
     // terminal background color
     backgroundColor: '#000',
 
     // border color (window, tabs)
     borderColor: '#999',
-
-    // custom css to embed in the main window
-    css: '',
-
-    // custom css to embed in the terminal window
-		termCSS: `
-			.cursor-node[focus=true] {
-				border-left: 2px;
-				border-bottom: 2px;
-			}
-		`,
 
     // set to `true` if you're using a Linux set up
     // that doesn't shows native menus
@@ -70,7 +59,9 @@ module.exports = {
 
   // a list of plugins to fetch and install from npm
 	plugins: [
-		'hyperterm-snazzy'
+		'hyperterm-grayula',
+    'hyper-tabs-enhanced',
+    'hypercwd',
 	],
 
   // in development, you can create a directory under
